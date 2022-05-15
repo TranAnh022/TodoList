@@ -1,0 +1,36 @@
+.container-view {
+    display: flex;
+    flex-direction: column;
+    background-color: #131324;
+    padding: 3rem 5rem;
+    height:100vh;
+    align-items: center;
+}
+.todo-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-gap: 2rem;
+}
+.container-view h1{
+    color: white;
+}
+
+.form-view {
+    display: grid;
+    grid-template-columns: 1 1;
+    border: 0.4rem solid ;
+    border-radius: 2rem;
+    background-color:#00000076 ; 
+    color:white;
+    width:20vw;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+.title h5{
+    display: inline;
+}
+.button-card {
+    display: flex;
+    gap: 1rem;
+}
