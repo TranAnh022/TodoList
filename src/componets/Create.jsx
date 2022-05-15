@@ -34,6 +34,8 @@ const Create = () => {
             <div className="header-title">
               <h1 className='text-light'>ToDo List</h1>
             </div>
+            <div className='input'>
+            <h5>Title :</h5>
             <input
               type="text"
               placeholder='Title...'
@@ -41,21 +43,26 @@ const Create = () => {
               onChange={(e) => handleChange(e)}
               value={values.title}
             />
-    
+        </div>
+        <div className='input'>
+            <h5>Deadline :</h5>
             <input
               type="date"
-              placeholder='DD/MM/YYYY'
+              placeholder='Deadline...'
               name="date"
               onChange={(e) => handleChange(e)}
               value={values.date}
             />
-      
+        </div>
+        <div className='input'>
+          <h5>Status :</h5>
             <select name="status" id="" onChange={(e) => handleChange(e)} value={values.status}>
               <option >---</option>
               <option  value="Done">Done</option>
               <option  value="notStarted">Not Started</option>
               <option  value="progress">In Progress</option>
-            </select>
+          </select>
+          </div>
             <button type="submit" className='btn'>Create</button>
       </form>
       <button type="submit" className='btn'><Link to='/view'>View</Link></button>

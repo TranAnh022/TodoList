@@ -40,3 +40,15 @@ option{
     background-color: #131324;
     color:white;
 }
+
+.input h5 {
+    margin-right: 1rem;
+    display: inline;
+    margin-top: 1rem;
+    color: white;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+}
